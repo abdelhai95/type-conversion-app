@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  color: #159eca;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #159eca;
+}
+
+p {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-60%);
+  background-color: #159eca;
+  width: 80%;
+  font-size: 2rem;
+  padding: 1rem;
+  color: black;
+
+  box-shadow: 0 0 1em 0 rgba(250, 247, 247, 0.2);
+  border-radius: 5px;
+}
+/* #159eca color for buttons and effects */
+.section {
+  position: relative;
+  width: 90%;
+  background-color: #23262e;
+  margin: 1rem auto;
+  padding: 2rem;
+  color: white;
+  border-radius: 0.3rem;
+  font-family: "Playfair Display", serif;
+}
+
+.second-value {
+  margin-top: 3rem;
+}
+
+.operator-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.operator {
+  margin-bottom: 1rem;
+}
+
+#operation {
+  width: 20rem;
+}
+.value {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.type {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* #first-type {
+  align-self: center;
+} */
+
+/* label[htmlFor="second-input"] {
+  margin-bottom: 2rem;
+} */
+
+select {
+  margin-left: 0.4rem;
+}
+
+select,
+input {
+  appearance: none;
+  border: 0;
+  outline: none;
+  font: inherit;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+
+  width: 15rem;
+  height: 2em;
+  padding: 0 4em 0 1em;
+  color: white;
+
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(250, 247, 247, 0.2);
+  cursor: pointer;
+}
+input {
+  background-color: #23262e;
+}
+
+select {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+    no-repeat right 0.2rem center;
+  text-transform: capitalize;
+}
+
+option {
+  background-color: #23262e;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+
+select:focus {
+  outline: none;
+}
+select:focus,
+input:focus {
+  border: 1px solid #159eca;
+}
+
+label {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+/* CSS */
+.btn {
+  appearance: button;
+  background-color: #159eca;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  line-height: 10px;
+  margin: 0;
+  outline: none;
+
+  padding: 1.3rem 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 20rem;
+}
+
+.btn:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn:main,
+.btn:focus {
+  user-select: auto;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.btn:disabled {
+  cursor: auto;
+}
+
+/*  this is to learn about key frame animation */
+/* .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+} */
