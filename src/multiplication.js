@@ -57,7 +57,7 @@ const multiplication = function (first, second) {
     explanation = `The result is ${first * second}.
     if the string have a numeric value it will be converted to it and multiplied by the other number,
    if it's empty string it will be converted to zero then multiplied,
-   if it's other value will be converted to NaN and the operation result will NaN.
+   if it's other value will be converted to NaN and the operation result will be NaN.
     `;
 
   if (
