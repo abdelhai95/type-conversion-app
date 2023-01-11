@@ -39,10 +39,9 @@
   .value {
     margin-bottom: 2rem;
   }
-
-  /* #operation {
-    width: 30rem;
-  } */
+  .third {
+    margin-left: 2.3rem;
+  }
 
   .btn {
     line-height: 15px;
