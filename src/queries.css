@@ -9,6 +9,10 @@
     margin-left: 7em;
   }
 
+  .header {
+    gap: 1.2rem;
+  }
+
   h3 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -41,6 +45,11 @@
   }
   .third {
     margin-left: 2.3rem;
+  }
+
+  .reset-btn {
+    width: 15rem;
+    font-size: 1.6rem;
   }
 
   .btn {
@@ -119,6 +128,10 @@
 
   select:focus {
     outline: none;
+  }
+
+  .reset-btn {
+    font-size: 2rem;
   }
 
   .btn {

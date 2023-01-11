@@ -44,7 +44,10 @@ function App() {
 
   return (
     <section className="section">
-      <h1>Learn JS type conversion</h1>
+      <div className="header">
+        <h1>Learn JS type conversion</h1>
+        <button className="reset-btn">Reset</button>
+      </div>
 
       <article>
         <h3>First Variable</h3>

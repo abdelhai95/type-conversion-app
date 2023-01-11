@@ -47,6 +47,13 @@ p {
   font-family: "Playfair Display", serif;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  /* gap:; */
+  margin-bottom: 2rem;
+}
+
 .second-value {
   margin-top: 3rem;
 }
@@ -127,8 +134,14 @@ label {
   letter-spacing: 0.2rem;
 }
 
+.reset-btn {
+  padding: 1rem 1.4rem;
+  width: 10rem;
+  align-self: center;
+}
 /* CSS */
-.btn {
+.btn,
+.reset-btn {
   appearance: button;
   background-color: #159eca;
   border: solid transparent;
@@ -140,14 +153,12 @@ label {
   display: inline-block;
   font-family: "Playfair Display", serif;
 
-  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
-  line-height: 10px;
+
   margin: 0;
   outline: none;
 
-  padding: 1.3rem 1.6rem;
   text-align: center;
   text-transform: uppercase;
 
@@ -157,10 +168,17 @@ label {
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 20rem;
 }
 
-.btn:after {
+.btn {
+  width: 20rem;
+  padding: 1.3rem 1.6rem;
+  font-size: 1.6rem;
+  line-height: 10px;
+}
+
+.btn:after,
+.reset-btn:after {
   background-clip: padding-box;
   background-color: #1cb0f6;
   border: solid transparent;
@@ -176,15 +194,19 @@ label {
 }
 
 .btn:main,
-.btn:focus {
+.btn:focus,
+.reset-btn:main,
+.reset-btn:focus {
   user-select: auto;
 }
 
-.btn:hover:not(:disabled) {
+.btn:hover:not(:disabled),
+.reset-btn:hover:not(:disabled) {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
 }
 
-.btn:disabled {
+.btn:disabled,
+.reset-btn:disabled {
   cursor: auto;
 }
