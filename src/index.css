@@ -50,7 +50,6 @@ p {
 .header {
   display: flex;
   flex-direction: column;
-  /* gap:; */
   margin-bottom: 2rem;
 }
 

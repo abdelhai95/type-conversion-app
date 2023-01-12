@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./index.css";
 import "./queries.css";
@@ -16,6 +16,20 @@ function App() {
   const [oper, setOper] = useState("addition");
   const [open, setOpen] = useState(false);
   const [result, setResult] = useState("hello world");
+
+  // const firstInput = document.getElementById(".first-input");
+  // const secondInput = document.getElementById(".second-input");
+
+  const handleClick = () => {
+    setOpen(false);
+    setValue1("hello");
+    setValue2("world");
+  };
+
+  useEffect(() => {
+    const resetBtn = document.querySelector(".reset-btn");
+    resetBtn.addEventListener("click", handleClick);
+  });
 
   const handleOperation = function (e) {
     const el1 = transformer(value1, type1);
@@ -56,6 +70,7 @@ function App() {
           <input
             type="text"
             id="first-input"
+            value={value1}
             onChange={(e) => setValue1(e.target.value)}
           ></input>
         </div>
@@ -83,6 +98,7 @@ function App() {
           <input
             type="text"
             id="second-input"
+            value={value2}
             onChange={(e) => setValue2(e.target.value)}
           ></input>
         </div>
