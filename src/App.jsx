@@ -17,9 +17,7 @@ function App() {
   const [open, setOpen] = useState(false);
   const [result, setResult] = useState("hello world");
 
-  // const firstInput = document.getElementById(".first-input");
-  // const secondInput = document.getElementById(".second-input");
-
+// Reset button functionality
   const handleClick = () => {
     setOpen(false);
     setValue1("hello");
@@ -31,6 +29,7 @@ function App() {
     resetBtn.addEventListener("click", handleClick);
   });
 
+  // Result button funcionality
   const handleOperation = function (e) {
     const el1 = transformer(value1, type1);
     const el2 = transformer(value2, type2);
